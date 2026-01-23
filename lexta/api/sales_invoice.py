@@ -3,9 +3,6 @@ from frappe.utils import flt
 
 
 def collect_all_negative_stock_errors(doc,method):
-    if not doc.update_stock:
-        return
-
     shortage = []
 
     for row in doc.items:
