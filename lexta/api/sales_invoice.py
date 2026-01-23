@@ -1,6 +1,6 @@
 import frappe
 from frappe.utils import flt
-import nissi
+
 
 def collect_all_negative_stock_errors(doc,method):
     if not doc.update_stock:
