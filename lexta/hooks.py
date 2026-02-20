@@ -140,7 +140,10 @@ app_license = "mit"
 doc_events = {
   "Delivery Note": {
        "validate": "lexta.api.sales_invoice.collect_all_negative_stock_errors",
-    }
+    },
+   "Sales Order":{
+       "validate":"lexta.api.sales_order.validate_company_total_stock",
+   }
  }
 
 # Scheduled Tasks
