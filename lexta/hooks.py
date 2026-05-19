@@ -178,6 +178,9 @@ doc_events = {
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "lexta.event.get_events"
 # }
+override_whitelisted_methods = {
+	"frappe.utils.print_format.report_to_pdf": "lexta.overide.pdf_customization.custom_report_to_pdf",
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
