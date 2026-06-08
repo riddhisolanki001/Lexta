@@ -138,9 +138,9 @@ app_license = "mit"
 # Hook on document methods and events
 
 doc_events = {
-  "Delivery Note": {
-       "validate": "lexta.api.sales_invoice.collect_all_negative_stock_errors",
-    },
+  # "Delivery Note": {
+  #      "validate": "lexta.api.sales_invoice.collect_all_negative_stock_errors",
+  #   },
    "Sales Order":{
        "validate":"lexta.api.sales_order.validate_company_total_stock",
    }
